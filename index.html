@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>FELIZ NOSSO DIA MEU AMOR!! S2</h1>
+</head>
+
+<body>  
+
+    <div class="card">
+        <p>APERTE O PLAY E SINTA A VIBE</p>
+    <img class="cardmsc" src="/assets/capamsc.jpg" alt="">
+    <audio class="msc" controls loop 
+        <source  src="/assets/sunflower.mp3" type="sunflower/mp3">
+      </audio>
+    </div>
+    <div class="main">
+        <video id="video" src="/assets/video.mp4"  width="300px" height="10%" poster="/assets/play.png" 
+        muted
+        autoplay
+            <source scr="/assets/video.mkv">
+            <source scr="/assets/video.mp4">
+            <source scr="/assets/video.mov">
+            >
+        </video>
+        <div class="text01">
+            <p>Eu te amo demais, obrigado por tudo meu amor ,por cada experiencia
+                cada palavra linda que me disse, pora cada dia ao meu lado
+                pela força que me dá, pela inspiração, tudo tudo.
+                Hoje completa mais de muitos dias 9 juntos... Eu te amo
+                minha Sunflower, espero que tenha gostado S2...
+                O código não ta 100% mas o que vale é a intenção kkkk</p>
+        </div>
+        <video id="video2" src="/assets/video2.mp4"  width="300px" height="10%" poster="/assets/play.png" 
+        muted
+        autoplay
+        <source scr="/assets/video2.mkv">
+        <source scr="/assets/video2.mp4">
+        <source scr="/assets/video2.mov">
+        >
+    </video>
+    
+      
+</div>
+<div class="main2">
+    <img class="foto" src="/assets/primeiraFoto.jpg" alt="primeiraFoto">
+    <div class="text02">
+        <p>Obrigado por tudo que vc fez por mim e me faz sentir, tudo isso é mágico meu amor. Te amo com todas as
+            minhas forças. Você me faz o cara mais feliz do mundo!!! Você é incrível</p>
+    </div>
+    <img class="foto" src="/assets/fotonaPraca.jpg" alt="fotonaPraca">
+
+</div>
+    <script>
+       var video1 = document.getElementById("video");
+        var video2 = document.getElementById("video2");
+
+        // Função para reiniciar o vídeo quando termina
+        function restartVideo(video) {
+            video.currentTime = 0; // Define o tempo do vídeo de volta para 0
+            video.play(); // Inicia o vídeo novamente
+        }
+
+        // Evento que reinicia o vídeo1 quando ele termina
+        video1.addEventListener("ended", function() {
+            restartVideo(video1);
+        });
+
+        // Evento que reinicia o vídeo2 quando ele termina
+        video2.addEventListener("ended", function() {
+            restartVideo(video2);
+        });
+    </script>
+    
+</body>
+
+</html>
