@@ -172,8 +172,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         justify-content:center;
         text-align: center;
-        align-items: center;
-        
+        align-items: center; 
     }
     @keyframes flutuante{
         50% {
